@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		05B873761DC437C8002AA6AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05B873751DC437C8002AA6AC /* main.m */; };
 		05B873791DC437C8002AA6AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05B873781DC437C8002AA6AC /* AppDelegate.m */; };
-		05B8737C1DC437C8002AA6AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05B8737B1DC437C8002AA6AC /* ViewController.m */; };
+		05B8737C1DC437C8002AA6AC /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05B8737B1DC437C8002AA6AC /* MainViewController.m */; };
 		05B8737F1DC437C8002AA6AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05B8737D1DC437C8002AA6AC /* Main.storyboard */; };
 		05B873811DC437C8002AA6AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05B873801DC437C8002AA6AC /* Assets.xcassets */; };
 		05B873841DC437C8002AA6AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05B873821DC437C8002AA6AC /* LaunchScreen.storyboard */; };
 		05B8738F1DC437C9002AA6AC /* EmojiDressUpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05B8738E1DC437C9002AA6AC /* EmojiDressUpTests.m */; };
 		05B8739A1DC437C9002AA6AC /* EmojiDressUpUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05B873991DC437C9002AA6AC /* EmojiDressUpUITests.m */; };
+		05B873F01DC4FA9A002AA6AC /* Global.m in Sources */ = {isa = PBXBuildFile; fileRef = 05B873EF1DC4FA9A002AA6AC /* Global.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +40,8 @@
 		05B873751DC437C8002AA6AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		05B873771DC437C8002AA6AC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		05B873781DC437C8002AA6AC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		05B8737A1DC437C8002AA6AC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		05B8737B1DC437C8002AA6AC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		05B8737A1DC437C8002AA6AC /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		05B8737B1DC437C8002AA6AC /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		05B8737E1DC437C8002AA6AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		05B873801DC437C8002AA6AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05B873831DC437C8002AA6AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +52,8 @@
 		05B873951DC437C9002AA6AC /* EmojiDressUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmojiDressUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05B873991DC437C9002AA6AC /* EmojiDressUpUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmojiDressUpUITests.m; sourceTree = "<group>"; };
 		05B8739B1DC437CA002AA6AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05B873EE1DC4FA9A002AA6AC /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
+		05B873EF1DC4FA9A002AA6AC /* Global.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Global.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +104,10 @@
 		05B873731DC437C8002AA6AC /* EmojiDressUp */ = {
 			isa = PBXGroup;
 			children = (
+				05B873ED1DC4FA7D002AA6AC /* Global */,
+				05B873EB1DC4FA17002AA6AC /* Controllers */,
 				05B873771DC437C8002AA6AC /* AppDelegate.h */,
 				05B873781DC437C8002AA6AC /* AppDelegate.m */,
-				05B8737A1DC437C8002AA6AC /* ViewController.h */,
-				05B8737B1DC437C8002AA6AC /* ViewController.m */,
 				05B8737D1DC437C8002AA6AC /* Main.storyboard */,
 				05B873801DC437C8002AA6AC /* Assets.xcassets */,
 				05B873821DC437C8002AA6AC /* LaunchScreen.storyboard */,
@@ -138,6 +141,24 @@
 				05B8739B1DC437CA002AA6AC /* Info.plist */,
 			);
 			path = EmojiDressUpUITests;
+			sourceTree = "<group>";
+		};
+		05B873EB1DC4FA17002AA6AC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				05B8737A1DC437C8002AA6AC /* MainViewController.h */,
+				05B8737B1DC437C8002AA6AC /* MainViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		05B873ED1DC4FA7D002AA6AC /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				05B873EE1DC4FA9A002AA6AC /* Global.h */,
+				05B873EF1DC4FA9A002AA6AC /* Global.m */,
+			);
+			name = Global;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,7 +297,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05B8737C1DC437C8002AA6AC /* ViewController.m in Sources */,
+				05B873F01DC4FA9A002AA6AC /* Global.m in Sources */,
+				05B8737C1DC437C8002AA6AC /* MainViewController.m in Sources */,
 				05B873791DC437C8002AA6AC /* AppDelegate.m in Sources */,
 				05B873761DC437C8002AA6AC /* main.m in Sources */,
 			);

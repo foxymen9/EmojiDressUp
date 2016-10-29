@@ -1,26 +1,250 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pyc-My-HbO">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_color" translatesAutoresizingMaskIntoConstraints="NO" id="Xqm-hl-rbx"/>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Xqm-hl-rbx" firstAttribute="leading" secondItem="pyc-My-HbO" secondAttribute="leading" id="4b7-Kw-SO7"/>
+                                    <constraint firstItem="Xqm-hl-rbx" firstAttribute="top" secondItem="pyc-My-HbO" secondAttribute="top" id="EUA-W3-foj"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xqm-hl-rbx" secondAttribute="trailing" id="QDp-O2-Rtw"/>
+                                    <constraint firstAttribute="bottom" secondItem="Xqm-hl-rbx" secondAttribute="bottom" id="xbn-e7-uGo"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="njL-9s-RBl">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_room" translatesAutoresizingMaskIntoConstraints="NO" id="iV1-uP-uBB"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="character_girl" translatesAutoresizingMaskIntoConstraints="NO" id="IFb-GF-8Lr"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clothes_dress1" translatesAutoresizingMaskIntoConstraints="NO" id="Zfv-Vt-xx7"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hair_base" translatesAutoresizingMaskIntoConstraints="NO" id="8dg-tZ-OQh"/>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Zfv-Vt-xx7" secondAttribute="bottom" id="6Us-5a-3Lt"/>
+                                    <constraint firstItem="Zfv-Vt-xx7" firstAttribute="top" secondItem="njL-9s-RBl" secondAttribute="top" id="7kG-1F-1LE"/>
+                                    <constraint firstAttribute="bottom" secondItem="iV1-uP-uBB" secondAttribute="bottom" id="8JQ-l3-uZw"/>
+                                    <constraint firstItem="iV1-uP-uBB" firstAttribute="leading" secondItem="njL-9s-RBl" secondAttribute="leading" id="Iy9-sP-Joa"/>
+                                    <constraint firstItem="IFb-GF-8Lr" firstAttribute="leading" secondItem="njL-9s-RBl" secondAttribute="leading" id="N4t-jg-I0I"/>
+                                    <constraint firstItem="8dg-tZ-OQh" firstAttribute="leading" secondItem="njL-9s-RBl" secondAttribute="leading" id="N4u-1z-tA5"/>
+                                    <constraint firstAttribute="trailing" secondItem="8dg-tZ-OQh" secondAttribute="trailing" id="Nbv-06-gyF"/>
+                                    <constraint firstItem="Zfv-Vt-xx7" firstAttribute="leading" secondItem="njL-9s-RBl" secondAttribute="leading" id="RI9-Ef-BTE"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zfv-Vt-xx7" secondAttribute="trailing" id="U3W-Mh-3Fp"/>
+                                    <constraint firstAttribute="trailing" secondItem="IFb-GF-8Lr" secondAttribute="trailing" id="acb-Qz-VZ8"/>
+                                    <constraint firstItem="IFb-GF-8Lr" firstAttribute="top" secondItem="njL-9s-RBl" secondAttribute="top" id="ilk-DA-ong"/>
+                                    <constraint firstItem="iV1-uP-uBB" firstAttribute="top" secondItem="njL-9s-RBl" secondAttribute="top" id="kiL-JA-aEu"/>
+                                    <constraint firstAttribute="bottom" secondItem="IFb-GF-8Lr" secondAttribute="bottom" id="nsc-lQ-NwU"/>
+                                    <constraint firstItem="8dg-tZ-OQh" firstAttribute="top" secondItem="njL-9s-RBl" secondAttribute="top" id="rXu-yP-eA0"/>
+                                    <constraint firstAttribute="bottom" secondItem="8dg-tZ-OQh" secondAttribute="bottom" id="sm4-Wl-ccX"/>
+                                    <constraint firstAttribute="trailing" secondItem="iV1-uP-uBB" secondAttribute="trailing" id="tML-N5-H6W"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rWe-Td-nlr">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inventory_bar" translatesAutoresizingMaskIntoConstraints="NO" id="I0m-n9-br4">
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgl-k9-B8k">
+                                        <state key="normal" image="arrow_left"/>
+                                        <connections>
+                                            <action selector="onBtnPrevDress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A8H-bm-RVL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d97-9B-tAW">
+                                        <state key="normal" image="arrow_right"/>
+                                        <connections>
+                                            <action selector="onBtnNextDress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="axt-9r-7Xc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQG-Og-Lkz">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="69" id="5sL-36-dlW"/>
+                                            <constraint firstAttribute="width" constant="60" id="KTa-Ei-YFa"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="thumb_clothes_dress1" backgroundImage="selected_outline"/>
+                                        <connections>
+                                            <action selector="onBtnDress1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bak-Mk-qMl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJ2-ev-fGa">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="17w-CL-OeI"/>
+                                            <constraint firstAttribute="height" constant="69" id="NXv-QT-HEm"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="thumb_clothes_dress2"/>
+                                        <connections>
+                                            <action selector="onBtnDress2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4os-3D-zLU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xoj-hV-yn7">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="69" id="Qsl-0d-fxe"/>
+                                            <constraint firstAttribute="width" constant="60" id="XX7-LS-fpa"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="thumb_clothes_dress3"/>
+                                        <connections>
+                                            <action selector="onBtnDress3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Xr-4j-ZkJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="eJ2-ev-fGa" firstAttribute="centerX" secondItem="rWe-Td-nlr" secondAttribute="centerX" id="1LQ-6c-DiQ"/>
+                                    <constraint firstItem="I0m-n9-br4" firstAttribute="height" secondItem="rWe-Td-nlr" secondAttribute="height" multiplier="1:1" id="38m-eh-T1Z"/>
+                                    <constraint firstItem="qgl-k9-B8k" firstAttribute="leading" secondItem="rWe-Td-nlr" secondAttribute="leading" constant="21" id="70l-4A-l6G"/>
+                                    <constraint firstItem="xoj-hV-yn7" firstAttribute="centerY" secondItem="rWe-Td-nlr" secondAttribute="centerY" id="8tw-mj-hhX"/>
+                                    <constraint firstAttribute="trailing" secondItem="I0m-n9-br4" secondAttribute="trailing" id="Eug-cv-nv0"/>
+                                    <constraint firstItem="qgl-k9-B8k" firstAttribute="centerY" secondItem="rWe-Td-nlr" secondAttribute="centerY" id="IOq-S9-kIB"/>
+                                    <constraint firstItem="eJ2-ev-fGa" firstAttribute="leading" secondItem="fQG-Og-Lkz" secondAttribute="trailing" constant="27.000000000000028" id="Ncp-CV-L13"/>
+                                    <constraint firstItem="eJ2-ev-fGa" firstAttribute="centerY" secondItem="rWe-Td-nlr" secondAttribute="centerY" id="RFK-CL-Nrh"/>
+                                    <constraint firstItem="d97-9B-tAW" firstAttribute="centerY" secondItem="rWe-Td-nlr" secondAttribute="centerY" id="cQB-is-MKD"/>
+                                    <constraint firstItem="I0m-n9-br4" firstAttribute="top" secondItem="rWe-Td-nlr" secondAttribute="top" id="q9X-Pm-ZDy"/>
+                                    <constraint firstItem="fQG-Og-Lkz" firstAttribute="centerY" secondItem="rWe-Td-nlr" secondAttribute="centerY" id="qBT-yM-coj"/>
+                                    <constraint firstItem="xoj-hV-yn7" firstAttribute="leading" secondItem="eJ2-ev-fGa" secondAttribute="trailing" constant="35.999999999999972" id="s9W-xA-bkC"/>
+                                    <constraint firstAttribute="trailing" secondItem="d97-9B-tAW" secondAttribute="trailing" constant="21" id="vmo-Jk-gXg"/>
+                                    <constraint firstItem="I0m-n9-br4" firstAttribute="leading" secondItem="rWe-Td-nlr" secondAttribute="leading" id="zSH-tN-wj8"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R9t-R6-sDk">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inventory_bar" translatesAutoresizingMaskIntoConstraints="NO" id="3d4-Ph-doZ">
+                                        <frame key="frameInset" width="414" height="85"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUo-sg-WTh">
+                                        <state key="normal" image="arrow_left"/>
+                                        <connections>
+                                            <action selector="onBtnPrevHair:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hrj-v5-Na1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PxZ-as-RrR">
+                                        <state key="normal" image="arrow_right"/>
+                                        <connections>
+                                            <action selector="onBtnNextHair:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n83-1Q-ucz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBZ-gl-E49">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="69" id="NnO-YI-jlZ"/>
+                                            <constraint firstAttribute="width" constant="60" id="UNV-ha-Qw8"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="thumb_hair_bun"/>
+                                        <connections>
+                                            <action selector="onBtnHair3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8WK-1g-pmV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODX-xp-TlX">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="69" id="Opc-VO-EeC"/>
+                                            <constraint firstAttribute="width" constant="60" id="R5l-Y1-Qtc"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="thumb_hair_base" backgroundImage="selected_outline"/>
+                                        <connections>
+                                            <action selector="onBtnHair1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Ez-9h-Ycx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8M-HO-AZz">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="Avp-np-pxf"/>
+                                            <constraint firstAttribute="height" constant="69" id="nsC-XW-a3w"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="thumb_hair_braids"/>
+                                        <connections>
+                                            <action selector="onBtnHair2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nOB-Hz-foi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="QBZ-gl-E49" firstAttribute="leading" secondItem="X8M-HO-AZz" secondAttribute="trailing" constant="36.999999999999972" id="5mZ-5W-qlP"/>
+                                    <constraint firstItem="IUo-sg-WTh" firstAttribute="leading" secondItem="R9t-R6-sDk" secondAttribute="leading" constant="21" id="Coe-cm-tQZ"/>
+                                    <constraint firstItem="QBZ-gl-E49" firstAttribute="centerY" secondItem="R9t-R6-sDk" secondAttribute="centerY" id="GRg-Fz-bGh"/>
+                                    <constraint firstItem="PxZ-as-RrR" firstAttribute="centerY" secondItem="R9t-R6-sDk" secondAttribute="centerY" id="KNJ-cT-nuv"/>
+                                    <constraint firstItem="ODX-xp-TlX" firstAttribute="centerY" secondItem="R9t-R6-sDk" secondAttribute="centerY" id="P1o-6w-Xpu"/>
+                                    <constraint firstItem="X8M-HO-AZz" firstAttribute="leading" secondItem="ODX-xp-TlX" secondAttribute="trailing" constant="27.000000000000028" id="mL5-Sg-sMb"/>
+                                    <constraint firstItem="X8M-HO-AZz" firstAttribute="centerY" secondItem="R9t-R6-sDk" secondAttribute="centerY" id="rVC-RO-BGM"/>
+                                    <constraint firstAttribute="trailing" secondItem="PxZ-as-RrR" secondAttribute="trailing" constant="21" id="t1l-ct-ebR"/>
+                                    <constraint firstItem="IUo-sg-WTh" firstAttribute="centerY" secondItem="R9t-R6-sDk" secondAttribute="centerY" id="u6c-Ix-OFx"/>
+                                    <constraint firstItem="X8M-HO-AZz" firstAttribute="centerX" secondItem="R9t-R6-sDk" secondAttribute="centerX" id="zZh-r1-05C"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="R9t-R6-sDk" secondAttribute="bottom" id="1QP-qF-2OM"/>
+                            <constraint firstItem="njL-9s-RBl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2tx-Ha-Pgy"/>
+                            <constraint firstAttribute="trailing" secondItem="rWe-Td-nlr" secondAttribute="trailing" id="C6u-ae-Vb0"/>
+                            <constraint firstAttribute="trailing" secondItem="R9t-R6-sDk" secondAttribute="trailing" id="CZ2-0k-KmS"/>
+                            <constraint firstItem="pyc-My-HbO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="E5H-Ok-9Ey"/>
+                            <constraint firstAttribute="trailing" secondItem="njL-9s-RBl" secondAttribute="trailing" id="K1e-7r-ysJ"/>
+                            <constraint firstItem="pyc-My-HbO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LRG-O6-JmL"/>
+                            <constraint firstAttribute="trailing" secondItem="pyc-My-HbO" secondAttribute="trailing" id="Ok5-co-oEC"/>
+                            <constraint firstItem="R9t-R6-sDk" firstAttribute="top" secondItem="rWe-Td-nlr" secondAttribute="bottom" id="PCl-cn-aVs"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pyc-My-HbO" secondAttribute="bottom" id="Qwc-aV-fwD"/>
+                            <constraint firstItem="njL-9s-RBl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cMM-4u-9bC"/>
+                            <constraint firstItem="rWe-Td-nlr" firstAttribute="top" secondItem="njL-9s-RBl" secondAttribute="bottom" id="f40-Qh-sWv"/>
+                            <constraint firstItem="rWe-Td-nlr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kdQ-27-PwQ"/>
+                            <constraint firstItem="rWe-Td-nlr" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="85:736" id="t7W-1H-FtE"/>
+                            <constraint firstItem="R9t-R6-sDk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vbm-DO-dcR"/>
+                            <constraint firstItem="njL-9s-RBl" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="566:736" id="yND-OF-Dvg"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnDress1" destination="fQG-Og-Lkz" id="DP7-jr-lSg"/>
+                        <outlet property="btnDress2" destination="eJ2-ev-fGa" id="Wab-7l-4uC"/>
+                        <outlet property="btnDress3" destination="xoj-hV-yn7" id="t0Y-DS-Kco"/>
+                        <outlet property="btnHair1" destination="ODX-xp-TlX" id="D3z-l2-mUm"/>
+                        <outlet property="btnHair2" destination="X8M-HO-AZz" id="QSD-PC-0fM"/>
+                        <outlet property="btnHair3" destination="QBZ-gl-E49" id="TE3-K3-cDs"/>
+                        <outlet property="btnNextDress" destination="d97-9B-tAW" id="wRs-aL-ubu"/>
+                        <outlet property="btnNextHair" destination="PxZ-as-RrR" id="geB-wr-HQm"/>
+                        <outlet property="btnPrevDress" destination="qgl-k9-B8k" id="qEt-VN-GcU"/>
+                        <outlet property="btnPrevHair" destination="IUo-sg-WTh" id="2gi-U1-WzB"/>
+                        <outlet property="imgCharacter" destination="IFb-GF-8Lr" id="gaK-QN-mAO"/>
+                        <outlet property="imgClothes" destination="Zfv-Vt-xx7" id="gJZ-SS-BmP"/>
+                        <outlet property="imgHair" destination="8dg-tZ-OQh" id="haM-7V-WTR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.39130434782609" y="123.09782608695653"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arrow_left" width="14" height="16"/>
+        <image name="arrow_right" width="14" height="16"/>
+        <image name="background_color" width="360" height="640"/>
+        <image name="background_room" width="360" height="491"/>
+        <image name="character_girl" width="360" height="471"/>
+        <image name="clothes_dress1" width="360" height="471"/>
+        <image name="hair_base" width="360" height="471"/>
+        <image name="inventory_bar" width="360" height="83"/>
+        <image name="selected_outline" width="66" height="66"/>
+        <image name="thumb_clothes_dress1" width="120" height="157"/>
+        <image name="thumb_clothes_dress2" width="120" height="157"/>
+        <image name="thumb_clothes_dress3" width="120" height="157"/>
+        <image name="thumb_hair_base" width="120" height="157"/>
+        <image name="thumb_hair_braids" width="120" height="157"/>
+        <image name="thumb_hair_bun" width="120" height="157"/>
+    </resources>
 </document>
