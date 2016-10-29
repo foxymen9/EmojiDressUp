@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05B873761DC437C8002AA6AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05B873751DC437C8002AA6AC /* main.m */; };
+		05B873791DC437C8002AA6AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05B873781DC437C8002AA6AC /* AppDelegate.m */; };
+		05B8737C1DC437C8002AA6AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05B8737B1DC437C8002AA6AC /* ViewController.m */; };
+		05B8737F1DC437C8002AA6AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05B8737D1DC437C8002AA6AC /* Main.storyboard */; };
+		05B873811DC437C8002AA6AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05B873801DC437C8002AA6AC /* Assets.xcassets */; };
+		05B873841DC437C8002AA6AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05B873821DC437C8002AA6AC /* LaunchScreen.storyboard */; };
+		05B8738F1DC437C9002AA6AC /* EmojiDressUpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05B8738E1DC437C9002AA6AC /* EmojiDressUpTests.m */; };
+		05B8739A1DC437C9002AA6AC /* EmojiDressUpUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05B873991DC437C9002AA6AC /* EmojiDressUpUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		05B8738B1DC437C9002AA6AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05B873691DC437C8002AA6AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05B873701DC437C8002AA6AC;
+			remoteInfo = EmojiDressUp;
+		};
+		05B873961DC437C9002AA6AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05B873691DC437C8002AA6AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05B873701DC437C8002AA6AC;
+			remoteInfo = EmojiDressUp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05B873711DC437C8002AA6AC /* EmojiDressUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiDressUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05B873751DC437C8002AA6AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		05B873771DC437C8002AA6AC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		05B873781DC437C8002AA6AC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		05B8737A1DC437C8002AA6AC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		05B8737B1DC437C8002AA6AC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		05B8737E1DC437C8002AA6AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		05B873801DC437C8002AA6AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		05B873831DC437C8002AA6AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		05B873851DC437C8002AA6AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05B8738A1DC437C9002AA6AC /* EmojiDressUpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmojiDressUpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05B8738E1DC437C9002AA6AC /* EmojiDressUpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmojiDressUpTests.m; sourceTree = "<group>"; };
+		05B873901DC437C9002AA6AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05B873951DC437C9002AA6AC /* EmojiDressUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmojiDressUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05B873991DC437C9002AA6AC /* EmojiDressUpUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmojiDressUpUITests.m; sourceTree = "<group>"; };
+		05B8739B1DC437CA002AA6AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05B8736E1DC437C8002AA6AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05B873871DC437C9002AA6AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05B873921DC437C9002AA6AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05B873681DC437C8002AA6AC = {
+			isa = PBXGroup;
+			children = (
+				05B873731DC437C8002AA6AC /* EmojiDressUp */,
+				05B8738D1DC437C9002AA6AC /* EmojiDressUpTests */,
+				05B873981DC437C9002AA6AC /* EmojiDressUpUITests */,
+				05B873721DC437C8002AA6AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		05B873721DC437C8002AA6AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05B873711DC437C8002AA6AC /* EmojiDressUp.app */,
+				05B8738A1DC437C9002AA6AC /* EmojiDressUpTests.xctest */,
+				05B873951DC437C9002AA6AC /* EmojiDressUpUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05B873731DC437C8002AA6AC /* EmojiDressUp */ = {
+			isa = PBXGroup;
+			children = (
+				05B873771DC437C8002AA6AC /* AppDelegate.h */,
+				05B873781DC437C8002AA6AC /* AppDelegate.m */,
+				05B8737A1DC437C8002AA6AC /* ViewController.h */,
+				05B8737B1DC437C8002AA6AC /* ViewController.m */,
+				05B8737D1DC437C8002AA6AC /* Main.storyboard */,
+				05B873801DC437C8002AA6AC /* Assets.xcassets */,
+				05B873821DC437C8002AA6AC /* LaunchScreen.storyboard */,
+				05B873851DC437C8002AA6AC /* Info.plist */,
+				05B873741DC437C8002AA6AC /* Supporting Files */,
+			);
+			path = EmojiDressUp;
+			sourceTree = "<group>";
+		};
+		05B873741DC437C8002AA6AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				05B873751DC437C8002AA6AC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		05B8738D1DC437C9002AA6AC /* EmojiDressUpTests */ = {
+			isa = PBXGroup;
+			children = (
+				05B8738E1DC437C9002AA6AC /* EmojiDressUpTests.m */,
+				05B873901DC437C9002AA6AC /* Info.plist */,
+			);
+			path = EmojiDressUpTests;
+			sourceTree = "<group>";
+		};
+		05B873981DC437C9002AA6AC /* EmojiDressUpUITests */ = {
+			isa = PBXGroup;
+			children = (
+				05B873991DC437C9002AA6AC /* EmojiDressUpUITests.m */,
+				05B8739B1DC437CA002AA6AC /* Info.plist */,
+			);
+			path = EmojiDressUpUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05B873701DC437C8002AA6AC /* EmojiDressUp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05B8739E1DC437CA002AA6AC /* Build configuration list for PBXNativeTarget "EmojiDressUp" */;
+			buildPhases = (
+				05B8736D1DC437C8002AA6AC /* Sources */,
+				05B8736E1DC437C8002AA6AC /* Frameworks */,
+				05B8736F1DC437C8002AA6AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmojiDressUp;
+			productName = EmojiDressUp;
+			productReference = 05B873711DC437C8002AA6AC /* EmojiDressUp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		05B873891DC437C9002AA6AC /* EmojiDressUpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05B873A11DC437CA002AA6AC /* Build configuration list for PBXNativeTarget "EmojiDressUpTests" */;
+			buildPhases = (
+				05B873861DC437C9002AA6AC /* Sources */,
+				05B873871DC437C9002AA6AC /* Frameworks */,
+				05B873881DC437C9002AA6AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05B8738C1DC437C9002AA6AC /* PBXTargetDependency */,
+			);
+			name = EmojiDressUpTests;
+			productName = EmojiDressUpTests;
+			productReference = 05B8738A1DC437C9002AA6AC /* EmojiDressUpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		05B873941DC437C9002AA6AC /* EmojiDressUpUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05B873A41DC437CA002AA6AC /* Build configuration list for PBXNativeTarget "EmojiDressUpUITests" */;
+			buildPhases = (
+				05B873911DC437C9002AA6AC /* Sources */,
+				05B873921DC437C9002AA6AC /* Frameworks */,
+				05B873931DC437C9002AA6AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05B873971DC437C9002AA6AC /* PBXTargetDependency */,
+			);
+			name = EmojiDressUpUITests;
+			productName = EmojiDressUpUITests;
+			productReference = 05B873951DC437C9002AA6AC /* EmojiDressUpUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05B873691DC437C8002AA6AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Bendt Jensen";
+				TargetAttributes = {
+					05B873701DC437C8002AA6AC = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 7PU3S9Z5ZT;
+						ProvisioningStyle = Automatic;
+					};
+					05B873891DC437C9002AA6AC = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 7PU3S9Z5ZT;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 05B873701DC437C8002AA6AC;
+					};
+					05B873941DC437C9002AA6AC = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 7PU3S9Z5ZT;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 05B873701DC437C8002AA6AC;
+					};
+				};
+			};
+			buildConfigurationList = 05B8736C1DC437C8002AA6AC /* Build configuration list for PBXProject "EmojiDressUp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 05B873681DC437C8002AA6AC;
+			productRefGroup = 05B873721DC437C8002AA6AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05B873701DC437C8002AA6AC /* EmojiDressUp */,
+				05B873891DC437C9002AA6AC /* EmojiDressUpTests */,
+				05B873941DC437C9002AA6AC /* EmojiDressUpUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05B8736F1DC437C8002AA6AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05B873841DC437C8002AA6AC /* LaunchScreen.storyboard in Resources */,
+				05B873811DC437C8002AA6AC /* Assets.xcassets in Resources */,
+				05B8737F1DC437C8002AA6AC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05B873881DC437C9002AA6AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05B873931DC437C9002AA6AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05B8736D1DC437C8002AA6AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05B8737C1DC437C8002AA6AC /* ViewController.m in Sources */,
+				05B873791DC437C8002AA6AC /* AppDelegate.m in Sources */,
+				05B873761DC437C8002AA6AC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05B873861DC437C9002AA6AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05B8738F1DC437C9002AA6AC /* EmojiDressUpTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05B873911DC437C9002AA6AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05B8739A1DC437C9002AA6AC /* EmojiDressUpUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05B8738C1DC437C9002AA6AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05B873701DC437C8002AA6AC /* EmojiDressUp */;
+			targetProxy = 05B8738B1DC437C9002AA6AC /* PBXContainerItemProxy */;
+		};
+		05B873971DC437C9002AA6AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05B873701DC437C8002AA6AC /* EmojiDressUp */;
+			targetProxy = 05B873961DC437C9002AA6AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		05B8737D1DC437C8002AA6AC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05B8737E1DC437C8002AA6AC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		05B873821DC437C8002AA6AC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05B873831DC437C8002AA6AC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		05B8739C1DC437CA002AA6AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		05B8739D1DC437CA002AA6AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		05B8739F1DC437CA002AA6AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7PU3S9Z5ZT;
+				INFOPLIST_FILE = EmojiDressUp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = searn.EmojiDressUp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		05B873A01DC437CA002AA6AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7PU3S9Z5ZT;
+				INFOPLIST_FILE = EmojiDressUp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = searn.EmojiDressUp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		05B873A21DC437CA002AA6AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7PU3S9Z5ZT;
+				INFOPLIST_FILE = EmojiDressUpTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = searn.EmojiDressUpTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmojiDressUp.app/EmojiDressUp";
+			};
+			name = Debug;
+		};
+		05B873A31DC437CA002AA6AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7PU3S9Z5ZT;
+				INFOPLIST_FILE = EmojiDressUpTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = searn.EmojiDressUpTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmojiDressUp.app/EmojiDressUp";
+			};
+			name = Release;
+		};
+		05B873A51DC437CA002AA6AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7PU3S9Z5ZT;
+				INFOPLIST_FILE = EmojiDressUpUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = searn.EmojiDressUpUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EmojiDressUp;
+			};
+			name = Debug;
+		};
+		05B873A61DC437CA002AA6AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7PU3S9Z5ZT;
+				INFOPLIST_FILE = EmojiDressUpUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = searn.EmojiDressUpUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EmojiDressUp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05B8736C1DC437C8002AA6AC /* Build configuration list for PBXProject "EmojiDressUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05B8739C1DC437CA002AA6AC /* Debug */,
+				05B8739D1DC437CA002AA6AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05B8739E1DC437CA002AA6AC /* Build configuration list for PBXNativeTarget "EmojiDressUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05B8739F1DC437CA002AA6AC /* Debug */,
+				05B873A01DC437CA002AA6AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		05B873A11DC437CA002AA6AC /* Build configuration list for PBXNativeTarget "EmojiDressUpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05B873A21DC437CA002AA6AC /* Debug */,
+				05B873A31DC437CA002AA6AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		05B873A41DC437CA002AA6AC /* Build configuration list for PBXNativeTarget "EmojiDressUpUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05B873A51DC437CA002AA6AC /* Debug */,
+				05B873A61DC437CA002AA6AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 05B873691DC437C8002AA6AC /* Project object */;
+}
