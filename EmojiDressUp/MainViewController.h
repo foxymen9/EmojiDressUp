@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
 
-@interface MainViewController : UIViewController
+@interface MainViewController : UIViewController <MFMessageComposeViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *btnPrevDress;
 @property (weak, nonatomic) IBOutlet UIButton *btnNextDress;
@@ -31,10 +32,13 @@
 - (IBAction)onBtnHair1:(id)sender;
 - (IBAction)onBtnHair2:(id)sender;
 - (IBAction)onBtnHair3:(id)sender;
+- (IBAction)onBtnMenu:(id)sender;
+- (IBAction)onBtnSMS:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UIImageView *imgCharacter;
 @property (weak, nonatomic) IBOutlet UIImageView *imgClothes;
 @property (weak, nonatomic) IBOutlet UIImageView *imgHair;
+@property (weak, nonatomic) IBOutlet UIView *captureView;
 
 @end
 

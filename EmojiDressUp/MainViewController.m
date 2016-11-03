@@ -59,6 +59,19 @@
     [self updateButtons];
 }
 
+-(void)captureAndCopyToClipboard{
+
+    //Capture
+    UIGraphicsBeginImageContext(self.captureView.bounds.size);
+    [self.captureView.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *capturedImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+
+    //Copy To Clipboard
+    [UIPasteboard generalPasteboard].image = capturedImage;
+}
+
+
 - (IBAction)onBtnPrevDress:(id)sender {
     if (dress_status > 0)
         dress_status--;
@@ -74,7 +87,7 @@
 }
 
 - (IBAction)onBtnNextDress:(id)sender {
-    if (dress_status < 4)
+    if (dress_status < (self.dressImageArray.count - 1))
         dress_status++;
     if (dress_btn_selected < 2)
         dress_btn_selected++;
@@ -120,7 +133,7 @@
 }
 
 - (IBAction)onBtnNextHair:(id)sender {
-    if (hair_status < 6)
+    if (hair_status < (self.hairImageArray.count - 1))
         hair_status++;
     if (hair_btn_selected < 2)
         hair_btn_selected++;
@@ -149,6 +162,40 @@
     hair_status = hair_status - (hair_btn_selected - 2);
     hair_btn_selected = 2;
     [self updateButtons];
+}
+
+- (IBAction)onBtnMenu:(id)sender {
+}
+
+- (IBAction)onBtnSMS:(id)sender {
+    MFMessageComposeViewController *controller = [[MFMessageComposeViewController alloc] init];
+	if([MFMessageComposeViewController canSendText])
+	{
+		controller.body = @"";
+		controller.recipients = [NSArray arrayWithObjects:@"", nil];
+		controller.messageComposeDelegate = self;
+        [self presentModalViewController:controller animated:YES];
+	}
+
+}
+- (void)messageComposeViewController:
+(MFMessageComposeViewController *)controller
+                 didFinishWithResult:(MessageComposeResult)result 
+{
+    switch (result)
+    {
+        case MessageComposeResultCancelled:  
+            NSLog(@"Cancelled");    
+            break; 
+        case MessageComposeResultFailed:
+            NSLog(@"Failed");
+            break;   
+        case MessageComposeResultSent:      
+            break; 
+        default:  
+            break;  
+    }  
+    [self dismissModalViewControllerAnimated:YES]; 
 }
 
 - (void)updateButtons {
@@ -197,5 +244,8 @@
     
     [self.imgHair setImage:[self.hairImageArray objectAtIndex:hair_status]];
     [self.imgClothes setImage:[self.dressImageArray objectAtIndex:dress_status]];
+    
+    //Capture And Copy to clipboard
+    [self captureAndCopyToClipboard];
 }
 @end
