@@ -168,12 +168,18 @@
 }
 
 - (IBAction)onBtnSMS:(id)sender {
+    //Capture And Copy to clipboard
+    [self captureAndCopyToClipboard];
+    
     MFMessageComposeViewController *controller = [[MFMessageComposeViewController alloc] init];
 	if([MFMessageComposeViewController canSendText])
 	{
 		controller.body = @"";
 		controller.recipients = [NSArray arrayWithObjects:@"", nil];
 		controller.messageComposeDelegate = self;
+        NSData *data = UIImagePNGRepresentation([UIPasteboard generalPasteboard].image);
+        [controller addAttachmentData:data typeIdentifier:@"image/png" filename:@"girl.png"];
+        
         [self presentModalViewController:controller animated:YES];
 	}
 
@@ -244,8 +250,5 @@
     
     [self.imgHair setImage:[self.hairImageArray objectAtIndex:hair_status]];
     [self.imgClothes setImage:[self.dressImageArray objectAtIndex:dress_status]];
-    
-    //Capture And Copy to clipboard
-    [self captureAndCopyToClipboard];
 }
 @end
